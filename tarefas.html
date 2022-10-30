@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ----------------------------- estilos CSS ----------------------------- -->
+  <link rel="stylesheet" href="./styles/tarefas.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+
+  <!-- ------------------- Biblioteca de icones - Fontawesome -------------------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ----------------------------- sweet alert ----------------------------- -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- CDN example (unpkg) -->
+  <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="./scripts/tarefas/tarefas.js" defer></script>
+
+
+
+  <title>To-Do App</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#">Tarefas</a>
+    </nav>
+
+    <div class="user-info">
+
+
+      <p id="nomeUsuario"></p>
+      <div class="user-image"></div>
+      <p onclick="closeApp()" id="closeApp">Finalizar sessão</i>
+
+     
+    </div>
+  </header>
+<div class="imgBanner">
+  <video autoplay muted loop id="myVideo">
+    <source src="./assets/videoplayback.mp4" type="video/mp4">
+  </video>
+  
+</div>
+<div class="novatarefaDesign">
+  <div  class="novatarefaDesign2">
+  <div class="designSpan"></div>
+  </div>
+  <form class="nova-tarefa">
+  
+    <button id="botaoAddTarefa" type="submit">      
+      <img class="imgAdd" src="./assets/plus.png" alt="Adicionar uma nova tarefa">
+    </button>
+    <input  id="novaTarefa" type="text" placeholder="Descreva o pedido">
+  </form>
+
+</div>
+
+
+  <ul class="tarefas-pendentes" id="tarefas-pendentes">
+  </ul>
+  <div class="designSpan2">
+    
+  </div>
+  <h2 class="titulo-terminadas">Pedido finalizado</h2>
+  <ul class="tarefas-terminadas">
+
+
+
+    
+
+
+
+
+
+  </ul>
+
+
+  <script src="./scripts/tarefas/tarefas.js" defer ></script>
+  <script src="./scripts/tarefas/tarefas_concluidas.js" defer ></script>
+  <script src="./scripts/tarefas/tarefas_pendentes.js" defer ></script>
+  <script src="./scripts/tarefas/deletar_tarefas.js" defer ></script>
+  <script src="scripts/animation/loaders.js"></script>
+
+  
+
+</body>
+
+</html>
